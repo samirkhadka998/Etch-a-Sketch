@@ -8,3 +8,20 @@ body{
 
     background-color: aqua;
 }
+
+div:hover{
+    background: blueviolet !important;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+}
+
+.rowChild{
+    flex:1;
+    height: auto;
+    width: auto;
+    border: 2px solid red;
+}
