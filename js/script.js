@@ -1,6 +1,12 @@
+
+
+const container = document.querySelector(".container");
+
+
+
+
+
 createGrid();
-
-
 const btn = document.querySelector('button');
 btn.addEventListener('click', btnClickPrompt);
 
@@ -20,9 +26,8 @@ function btnClickPrompt() {
     createGrid(numberOfGrid);
 }
 
-function createGrid(num = 3) {
+function createGrid(num = 16) {
 
-    const container = document.querySelector(".container");
     container.textContent = '';
     container.style.display = 'Flex';
     container.style.flexWrap = 'wrap'
@@ -54,4 +59,16 @@ function createGrid(num = 3) {
 
     }
 
+}
+
+const divs = document.querySelectorAll('.rowChild');
+
+divs.forEach(div => {
+    if(!div) return;
+    div.addEventListener('mouseenter', addTrailingBackground )
+})
+
+function addTrailingBackground(e){
+    // this.style.classList.add('black');
+    e.target.classList.add('black');
 }
