@@ -4,14 +4,18 @@
     box-sizing: border-box;
 }
 
-body{
-
-    background-color: aqua;
+body {
+    height: 100vh;
+    background : url('../img/etch.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    background-size: contain;
 }
 
-/* div:hover{
-    background: blueviolet !important;
-} */
+
 
 .row{
     display: flex;
@@ -23,9 +27,15 @@ body{
     flex:1;
     height: auto;
     width: auto;
-    border: 2px solid red;
+    border-radius: 5px;
 }
 
 .black{
     background-color: black;
+}
+
+
+
+button, select#color {
+    padding: 10px 20px;
 }
